@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demand Forecasting</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Demand Forecasting System</h2>
+
+        <form action="/predict" method="post">
+            <input type="number" name="store_id" placeholder="Store ID" required>
+            <input type="number" name="sku_id" placeholder="SKU ID" required>
+            <input type="number" step="0.01" name="total_price" placeholder="Total Price" required>
+            <input type="number" step="0.01" name="base_price" placeholder="Base Price" required>
+            <input type="number" name="is_featured_sku" placeholder="Featured (0/1)" required>
+            <input type="number" name="is_display_sku" placeholder="Display (0/1)" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            Predicted Units Sold: {{ prediction }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
