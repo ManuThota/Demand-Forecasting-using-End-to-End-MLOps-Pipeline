@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.env/
+
+# MLflow
+mlartifacts/
+mlflow.db
+
+# Data files
+data/raw/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Testing cache
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
