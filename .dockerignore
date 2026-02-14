@@ -2,8 +2,6 @@ __pycache__/
 venv/
 .git/
 .gitignore
-notebooks/
-tests/
 data/raw/
 mlartifacts/
 *.log
